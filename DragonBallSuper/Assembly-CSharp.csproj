@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\TapCard.cs" />
+    <Compile Include="Assets\DrawCard.cs" />
+    <Compile Include="Assets\Scripts\JsonDataTool.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
@@ -635,6 +637,10 @@
       <Project>{9A3906E8-69B5-12CB-1AD1-E97C3340A3E3}</Project>
       <Name>Unity.2D.Animation.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Weaver.csproj">
+      <Project>{88305AEF-C8E8-DADA-5745-339C53125DF7}</Project>
+      <Name>Mirror.Weaver</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.PixelPerfect.Editor.csproj">
       <Project>{CBD33055-7153-FAA3-8BA0-E48B59D73DDE}</Project>
       <Name>Unity.2D.PixelPerfect.Editor</Name>
@@ -643,9 +649,25 @@
       <Project>{E1D63B34-45E9-36A8-7122-94CDB7DF79E7}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Authenticators.csproj">
+      <Project>{4559D748-A0C6-1913-6811-11537FC8075A}</Project>
+      <Name>Mirror.Authenticators</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Components.csproj">
+      <Project>{1FE352F4-644C-AB33-F85E-4BB21B6614A5}</Project>
+      <Name>Mirror.Components</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
       <Project>{3A7B3085-CDB5-E747-CDD4-89FAF8CB29A4}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.csproj">
+      <Project>{430B52B2-9CCE-B51A-E8E6-EC5D858218A6}</Project>
+      <Name>Mirror.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
+      <Project>{7B20E331-144F-4233-511A-1EE0D49CA4E5}</Project>
+      <Name>Mirror.CompilerSymbols</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{094DAED1-E50E-D927-D5C8-A14B268F34CB}</Project>
@@ -671,9 +693,25 @@
       <Project>{B992BCA6-0A43-AFCD-AA7D-BFA3AEB88614}</Project>
       <Name>PsdPlugin</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Cloud.csproj">
+      <Project>{8BC23325-9654-2BA4-1EA1-1A3164252477}</Project>
+      <Name>Mirror.Cloud</Name>
+    </ProjectReference>
+    <ProjectReference Include="Telepathy.csproj">
+      <Project>{21A7A3DC-6707-6641-6F2F-0C8D1B17648B}</Project>
+      <Name>Telepathy</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.Cloud.Pong.csproj">
+      <Project>{88FCD320-9495-0FCD-3464-0E82B66E9CF2}</Project>
+      <Name>Mirror.Examples.Cloud.Pong</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{5C176882-1263-96CB-5EB8-F002FD3CF7E0}</Project>
       <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.csproj">
+      <Project>{C17E425C-92C3-2303-A910-7C4154DA57BD}</Project>
+      <Name>Mirror</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{70CF0D3D-065B-60C1-45ED-F11CF5C3F1DF}</Project>
@@ -703,6 +741,14 @@
       <Project>{35ABB48C-1A51-C923-21A4-7B992F5B531A}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Editor.csproj">
+      <Project>{A88F697E-9022-CCBA-1151-6E6848A67C9A}</Project>
+      <Name>Mirror.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="kcp2k.csproj">
+      <Project>{D9A08A8C-88C0-E915-95E2-689E7E3C76E3}</Project>
+      <Name>kcp2k</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
       <Project>{2AB62D94-A126-A8FA-0E7A-6C8697BB0BD8}</Project>
       <Name>Unity.2D.PixelPerfect</Name>
@@ -711,9 +757,17 @@
       <Project>{3D5B6CFB-288E-5540-E409-7D23156CBD12}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.Cloud.GUI.csproj">
+      <Project>{974702B3-D266-3F47-ED7F-7C968B340B36}</Project>
+      <Name>Mirror.Examples.Cloud.GUI</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{0B81BA69-15C0-8912-43C8-C49D52B9404B}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleWebTransport.csproj">
+      <Project>{82622565-AFFC-D119-D736-1D43F95E4990}</Project>
+      <Name>SimpleWebTransport</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
       <Project>{5ED3375B-1B14-E476-47A7-CB38C7879566}</Project>
@@ -734,58 +788,6 @@
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{77F86675-94FF-3F2C-7166-9AD457297D54}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Weaver.csproj">
-      <Project>{88305AEF-C8E8-DADA-5745-339C53125DF7}</Project>
-      <Name>Mirror.Weaver</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Authenticators.csproj">
-      <Project>{4559D748-A0C6-1913-6811-11537FC8075A}</Project>
-      <Name>Mirror.Authenticators</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Components.csproj">
-      <Project>{1FE352F4-644C-AB33-F85E-4BB21B6614A5}</Project>
-      <Name>Mirror.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{430B52B2-9CCE-B51A-E8E6-EC5D858218A6}</Project>
-      <Name>Mirror.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{7B20E331-144F-4233-511A-1EE0D49CA4E5}</Project>
-      <Name>Mirror.CompilerSymbols</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Cloud.csproj">
-      <Project>{8BC23325-9654-2BA4-1EA1-1A3164252477}</Project>
-      <Name>Mirror.Cloud</Name>
-    </ProjectReference>
-    <ProjectReference Include="Telepathy.csproj">
-      <Project>{21A7A3DC-6707-6641-6F2F-0C8D1B17648B}</Project>
-      <Name>Telepathy</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.Cloud.Pong.csproj">
-      <Project>{88FCD320-9495-0FCD-3464-0E82B66E9CF2}</Project>
-      <Name>Mirror.Examples.Cloud.Pong</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.csproj">
-      <Project>{C17E425C-92C3-2303-A910-7C4154DA57BD}</Project>
-      <Name>Mirror</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Editor.csproj">
-      <Project>{A88F697E-9022-CCBA-1151-6E6848A67C9A}</Project>
-      <Name>Mirror.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="kcp2k.csproj">
-      <Project>{D9A08A8C-88C0-E915-95E2-689E7E3C76E3}</Project>
-      <Name>kcp2k</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.Cloud.GUI.csproj">
-      <Project>{974702B3-D266-3F47-ED7F-7C968B340B36}</Project>
-      <Name>Mirror.Examples.Cloud.GUI</Name>
-    </ProjectReference>
-    <ProjectReference Include="SimpleWebTransport.csproj">
-      <Project>{82622565-AFFC-D119-D736-1D43F95E4990}</Project>
-      <Name>SimpleWebTransport</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
