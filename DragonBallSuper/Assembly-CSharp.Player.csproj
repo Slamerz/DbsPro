@@ -56,14 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Cards\SD101.cs" />
     <Compile Include="Assets\Scripts\ZoneScript.cs" />
+    <Compile Include="Assets\Scripts\JsonDataTool.cs" />
     <Compile Include="Assets\Scripts\DrawCards.cs" />
+    <Compile Include="Assets\Scripts\CardBase.cs" />
     <Compile Include="Assets\Scripts\CardDetails.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\DrawCard.cs" />
+    <Compile Include="Assets\Scripts\DeckModel.cs" />
+    <Compile Include="Assets\Scripts\CardsModel.cs" />
     <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\TapCard.cs" />
-    <Compile Include="Assets\DrawCard.cs" />
-    <Compile Include="Assets\Scripts\JsonDataTool.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
