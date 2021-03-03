@@ -68,6 +68,28 @@
     <Compile Include="Assets\Scripts\CardsModel.cs" />
     <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\TapCard.cs" />
+    <Compile Include="Assets\DrawCard.cs" />
+    <Compile Include="Assets\Scripts\JsonDataTool.cs" />
+    <Compile Include="Assets\Scripts\DeckModel.cs" />
+    <Compile Include="Assets\Scripts\CardBase.cs" />
+    <Compile Include="Assets\Scripts\CardsModel.cs" />
+    <Compile Include="Assets\Scripts\Cards\SD1\SD101.cs" />
+    <Compile Include="Assets\Scripts\Cards\SD1\SD102.cs" />
+    <Compile Include="Assets\Scripts\Cards\SD1\SD103.cs" />
+    <Compile Include="Assets\Scripts\Cards\SD1\SD104.cs" />
+    <Compile Include="Assets\Scripts\Cards\SD1\SD105.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1033.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1034.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1035.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1037.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1039.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1040.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1042.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1044.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1046.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1050.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1054.cs" />
+    <Compile Include="Assets\Scripts\Cards\BT1\BT1055.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

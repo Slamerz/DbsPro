@@ -1,0 +1,108 @@
+{
+	"Cards": [
+		{
+		"CardId": "SD1-01",
+		"Name": "Super Saiyan God Son Goku | SSGSS Son Goku, The Soul Striker",
+		"Type": "Leader",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\30238889-a687-4dfe-a5b0-14f77031843e.png",
+		"BackImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\30238889-a687-4dfe-a5b0-14f77031843e.awakened.png"
+		},
+		{
+		"CardId": "SD1-02",
+		"Name": "God Rush Son Goku",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\27b76391-1eb8-430d-beaf-c1b57149da94.png"
+		},
+		{
+		"CardId": "SD1-03",
+		"Name": "SS3 Son Goku, Maximum Energy",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\51b4a1ba-7069-4341-824a-748b989e99ba.png"
+		},
+		{
+		"CardId": "SD1-04",
+		"Name": "Rapid Spirit Ball Son Goku",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\80eda91e-bfc6-4ce4-b890-cfb73c55d7e5.png"
+		},
+		{
+		"CardId": "SD1-05",
+		"Name": "Vegeta, Prince of Speed",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\2cca37b5-fa28-4f36-bf70-14b59a8a399d.png"
+		},
+		{
+		"CardId": "BT1-033",
+		"Name": "Kind Saiyan Son Goku",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\a1c53d71-669c-4869-a4ab-71bff76186a8.png"
+		},
+		{
+		"CardId": "BT1-034",
+		"Name": "Mighty Striker Son Gohan",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\2f2d157a-faf4-4ddc-84f6-a2253ec604ca.png"
+		},
+		{
+		"CardId": "BT1-035",
+		"Name": "Son Goten",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\6e5accf8-2879-43ef-9799-02c81baf38ee.png"
+		},
+		{
+		"CardId": "BT1-037",
+		"Name": "Assailant Vegeta",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\73d04f79-a64f-4f5a-9f07-3d3d1868aa18.png"
+		},
+		{
+		"CardId": "BT1-039",
+		"Name": "Trunks",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\3dc2749f-090a-43a5-8c43-f33e88cf6f50.png"
+		},
+		{
+		"CardId": "BT1-040",
+		"Name": "Bulma, God Tempter",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\2c0d70ea-0165-4c5b-b5a6-175c3b85fb54.png"
+		},
+		{
+		"CardId": "BT1-042",
+		"Name": "Energy Boost Beerus",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\f5aa8043-8445-46b4-b372-6c315405bf6b.png"
+		},
+		{
+		"CardId": "BT1-044",
+		"Name": "Whis, The Resting Attendant",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\27edfa8f-1075-4e0b-949b-fb4b685979ad.png"
+		},
+		{
+		"CardId": "BT1-046",
+		"Name": "Taunting Piccolo",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\ae4335c8-ebe8-4007-a538-d8b310c266e8.png"
+		},
+		{
+		"CardId": "BT1-050",
+		"Name": "Guardian North Kai",
+		"Type": "Battle",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\a83f4354-db58-47ef-a564-a56eb8eec997.png"
+		},
+		{
+		"CardId": "BT1-054",
+		"Name": "Encouraging Presence Monaka",
+		"Type": "Extra",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\8d35c0cb-b0df-44f8-8153-519e954488d5.png"
+		},
+		{
+		"CardId": "BT1-055",
+		"Name": "Whis's Coercion",
+		"Type": "Extra",
+		"ImagePath": "b81599ea-7717-4725-9acd-f62947782fd6\\Sets\\7ead4d27-4628-4fbf-87e5-7d35715af912\\Cards\\e27e1cc2-8f21-4bba-9d9a-436d4b63a72b.png"
+		}
+		
+	]
+}
