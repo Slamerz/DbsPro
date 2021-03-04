@@ -1,0 +1,21 @@
+{
+	"Leader": "SD1-01",
+	"Cards": [
+	{"CardId" : "SD1-02", "Quantity": 4},
+	{"CardId" : "SD1-03", "Quantity": 2},
+	{"CardId" : "SD1-04", "Quantity": 2},
+	{"CardId" : "SD1-05", "Quantity": 2},
+	{"CardId" : "BT1-033", "Quantity": 4},
+	{"CardId" : "BT1-034", "Quantity": 2},
+	{"CardId" : "BT1-035", "Quantity": 3},
+	{"CardId" : "BT1-037", "Quantity": 4},
+	{"CardId" : "BT1-039", "Quantity": 3},
+	{"CardId" : "BT1-040", "Quantity": 4},
+	{"CardId" : "BT1-042", "Quantity": 2},
+	{"CardId" : "BT1-044", "Quantity": 4},
+	{"CardId" : "BT1-046", "Quantity": 4},
+	{"CardId" : "BT1-050", "Quantity": 4},
+	{"CardId" : "BT1-054", "Quantity": 2},
+	{"CardId" : "BT1-055", "Quantity": 4}
+	]
+}

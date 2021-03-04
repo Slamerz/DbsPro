@@ -20,10 +20,10 @@ public abstract class CardBase : NetworkBehaviour
     }
 
 
-    public void Initialize(string CardId)
+    public void Initialize(string Id)
     {
-        var cardDetailsFilePath = Application.dataPath + "/CardDetails.json";
-        if (!File.Exists(cardDetailsFilePath))
+        var cardDetailsFilePath = "/CardDetails.json";
+        if (!File.Exists(Application.dataPath + cardDetailsFilePath))
         {
             return;
         }
@@ -32,7 +32,7 @@ public abstract class CardBase : NetworkBehaviour
         var cardsDetails = JsonUtility.FromJson<CardsModel>(cardsDetailsJson);
 
         var cardDetails =
-            cardsDetails.Cards.FirstOrDefault(card => card.CardId.Equals(CardId, StringComparison.CurrentCultureIgnoreCase));
+            cardsDetails.Cards.FirstOrDefault(card => card.CardId.Equals(Id, StringComparison.CurrentCultureIgnoreCase));
 
         if (cardDetails == null)
         {
