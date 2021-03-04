@@ -8,8 +8,14 @@ using Random = UnityEngine.Random;
 public class DrawCard : MonoBehaviour
 {
     public List<string> Cards;
+    public GameObject Card;
+
+    public GameObject PlayerHand;
+
+
     void Start()
     {
+        PlayerHand = GameObject.Find("Player-Hand");
         var deckAsJson = JsonDataTool.GetJsonFromFile("./decks/deck.json");
         var deckData = JsonUtility.FromJson<Deck>(deckAsJson);
 
@@ -22,6 +28,29 @@ public class DrawCard : MonoBehaviour
         }
         Shuffle();
     }
+
+
+    public void Draw()
+    {
+        if (Cards.Count <= 0)
+        {
+            return;
+        }
+
+        var drawCard = Instantiate(Card, new Vector2(0, 0), Quaternion.identity);
+        Type cardScript = Type.GetType(Cards[0].Replace("-", ""));
+        drawCard.AddComponent(cardScript);
+        drawCard.transform.SetParent(PlayerHand.transform, false);
+
+        Cards.RemoveAt(0);
+    }
+
+
+
+
+
+
+
     private class WeightedCards
     {
         public float Weight { get; set; }
@@ -68,6 +97,7 @@ public class DrawCard : MonoBehaviour
             int half = (int) Math.Floor((double) (input.Count / 2));
             List<WeightedCards> bucketA = input.Take(half).ToList();
             List<WeightedCards> bucketB = input.Skip(bucketA.Count).ToList();
+
             for (var i = 0; i < bucketA.Count; i++)
             {
                 result.Add(bucketA[i]);
@@ -78,6 +108,7 @@ public class DrawCard : MonoBehaviour
             {
                 result.Add(bucketB.Last());
             }
+
             return result;
         }
     }
