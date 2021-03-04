@@ -20,6 +20,7 @@ public class DrawCard : MonoBehaviour
               Cards.Add(deckCard.CardId);
             }
         }
+        Shuffle();
     }
     private class WeightedCards
     {
@@ -47,11 +48,37 @@ public class DrawCard : MonoBehaviour
 
         weightedCards.Sort((x, y) => x.Weight.CompareTo(y.Weight));
 
+        for (var i = 0; i < seed; i++)
+        {
+            weightedCards = Bridge(weightedCards);
+        }
+
+        var shuffledCardIds = new List<string>();
+
+        foreach (var c in weightedCards)
+        {
+            shuffledCardIds.Add(c.Id);
+        }
+
+        Cards = shuffledCardIds;
+
         List<WeightedCards> Bridge(List<WeightedCards> input)
         {
+            var result = new List<WeightedCards>();
             int half = (int) Math.Floor((double) (input.Count / 2));
-            List<WeightedCards> bucketA = input.Take( half).ToList();
-            List<WeightedCards> bucketB = input.Take(input.Count - bucketA.Count).Skip(half).ToList();
+            List<WeightedCards> bucketA = input.Take(half).ToList();
+            List<WeightedCards> bucketB = input.Skip(bucketA.Count).ToList();
+            for (var i = 0; i < bucketA.Count; i++)
+            {
+                result.Add(bucketA[i]);
+                result.Add(bucketB[i]);
+            }
+
+            if (bucketA.Count < bucketB.Count)
+            {
+                result.Add(bucketB.Last());
+            }
+            return result;
         }
     }
 }
