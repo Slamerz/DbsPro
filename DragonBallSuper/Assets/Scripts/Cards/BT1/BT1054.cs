@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BT1054 : MonoBehaviour
+public class BT1054 : CardBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Initialize("BT1-054");
     }
 }

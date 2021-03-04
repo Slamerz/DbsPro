@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SD104 : MonoBehaviour
+public class SD104 : CardBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Initialize("SD1-04");
     }
 }

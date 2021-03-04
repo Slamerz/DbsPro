@@ -27,7 +27,6 @@ public class CardDetails : MonoBehaviour
 
     public void Start()
     {
-        Type t = Type.GetType("SD1-01".Replace("-", ""));
-        gameObject.AddComponent(t);
+        
     }
 }
