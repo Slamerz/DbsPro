@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,11 +12,12 @@ public class DrawCard : MonoBehaviour
     public GameObject Card;
 
     public GameObject PlayerHand;
-
+    public GameObject PlayerLeaderZone;
 
     void Start()
     {
         PlayerHand = GameObject.Find("Player-Hand");
+        PlayerLeaderZone = GameObject.Find("Player-Leader-Zone");
         var deckAsJson = JsonDataTool.GetJsonFromFile("./decks/deck.json");
         var deckData = JsonUtility.FromJson<Deck>(deckAsJson);
 
@@ -27,6 +29,12 @@ public class DrawCard : MonoBehaviour
             }
         }
         Shuffle();
+
+        var leaderCard = Instantiate(Card, new Vector2(0, 0), Quaternion.identity);
+        Type cardScript = Type.GetType(deckData.Leader.Replace("-", ""));
+        leaderCard.AddComponent(cardScript);
+        leaderCard.transform.SetParent(PlayerLeaderZone.transform, false);
+        leaderCard.GetComponent<RectTransform>().sizeDelta = new Vector2(88, 122);
     }
 
 
